@@ -19,8 +19,9 @@
                                     <tr>
                                         <th>Task ID</th>
                                         <th>Task Title</th>
-                                        <th>Task Description</th>
+                                        <th>Task Points</th>
                                         <th>Employee Incharge</th>
+                                        <th>Manager Incharge</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -29,8 +30,10 @@
                                     <tr>
                                         <td>{{ $item->task_id }}</td>
                                         <td>{{ $item->task_title }} </td>
-                                        <td>{{ $item->task_desc }}</td>
+                                        <td>{{ $item->points }}</td>
                                         <td>{{ $item->emp_id }}</td>
+                                        <td>{{ $item->man_id }}</td>
+                            
                             
                                         <td>
                                             <a href="{{ url('/task/' . $item->task_id) }}" title="View task"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>

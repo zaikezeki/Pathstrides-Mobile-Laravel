@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use DB;
 
-class TaskSeeder extends Seeder
+class EmployeeManagerDepartment extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,10 +15,10 @@ class TaskSeeder extends Seeder
      */
     public function run()
     {
-        $task=[
-            ['task_id'=>'1','task_title'=>'Repair Post','points'=>'100','emp_id'=>'1','man_id'=>'1']
-           
+        $employeeManagerDepartment=[
+            ['dep_id'=>'2','man_id'=>'1','emp_id'=>'1'],
+          
         ];
-        DB::table('task')->insert($task);
+        DB::table('employee_manager_departments')->insert($employeeManagerDepartment);
     }
 }

@@ -22,6 +22,7 @@
                                         <th>Manager Email</th>
                                         <th>Contanct Number</th>
                                         <th>Admin Incharge</th>
+                                        <th>Approval  Status</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -32,6 +33,7 @@
                                         <td>{{ $item->man_fname }} , {{ $item->man_lname }}</td>
                                         <td>{{ $item->man_email }}</td>
                                         <td>{{ $item->man_contanct_num}}</td>
+                                        <td>{{$item->approval_status}}
                                         <td>{{$item->admin_id}}
                                         </td>
                                         <td>
